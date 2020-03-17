@@ -1,6 +1,8 @@
 <!--pages/home/home.wxml-->
 <text>hello world</text>
-<button  size="mini">按钮</button>
+<button  size="mini" >按钮</button>
 
 <view>知识点2</view>
-<view>hehehe</view>
+<view>{{meg}}</view>
+<!-- //获取用户信息 -->
+<button size="mini" open-type="getUserInfo" bindgetuserinfo="handleGetUserInfo"  >获取授权</button>

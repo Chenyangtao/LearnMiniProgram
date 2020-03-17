@@ -1,23 +1,13 @@
 // pages/home/home.js
-Component({
-  /**
-   * 组件的属性列表
-   */
-  properties: {
-
-  },
-
+Page({
   /**
    * 组件的初始数据
    */
   data: {
-
+      meg:"呵呵呵"
   },
-
-  /**
-   * 组件的方法列表
-   */
-  methods: {
-
+  handleGetUserInfo(event) {
+    console.log(event)
   }
+  
 })

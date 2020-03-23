@@ -1,0 +1,29 @@
+<!--pages/wxml/wxml.wxml-->
+<!-- 1.wxml的格式 -->
+<!-- <view></view>
+<image/> 严格闭合-->
+<!-- 严格区分大小写<view Class="" class=""></view> -->
+
+<!-- 2.Mustache -->
+<view>{{message}}</view>
+<view>{{firstname}} {{lastname}}</view>
+<view>{{firstname+' '+lastname}}</view>
+<view>{{age>18?'成年人':'未成年人'}}</view>
+
+<view>{{nowTime}}</view>
+
+<button size="mini" bindtap="handleSwichColor">切换颜色</button>
+<view class="box {{isActive ? 'active':''}}">哈哈哈</view>
+
+<view>---------条件判断---------</view>
+<button size='mini' bindtap="handleSwitchShow">处理显示</button>
+<view wx:if="{{isShow}}">哈哈哈</view>
+
+
+
+<view>------template------------</view>
+<!-- template:代码复用 -->
+<!-- 模板中包裹的内容，在没有使用前，是不会进行任何的渲染 -->
+<import src="/wxml/template.wxml"/>
+
+<template is="contentItem" data="{{btntext:'按钮',content:'hhh'}}"/>

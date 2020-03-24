@@ -1,3 +1,13 @@
 <!--pages/home/home.wxml-->
-<text>hello world</text>
-<button  size="mini">按钮</button>
+<!-- 1.使用自定义的组件 -->
+<!-- <my-cpn></my-cpn>
+<my-cpn/> -->
+
+<!-- 3.给自定义组件传递数据 -->
+<my-prop title="哈哈哈" titleclass="red"/>
+<my-prop title="嘿嘿"/>
+<my-prop />
+
+<!-- tab-control的练习 -->
+<tab-control titles="{{['衣服','裤子','鞋子']}}"
+              bind:itemclick="handleTabClick"/>

@@ -1,4 +1,8 @@
 {
   "component": true,
-  "usingComponents": {}
+  "usingComponents": {
+    "my-cpn":"/components/my-cpn/my-cpn",
+    "my-prop": "/components/my-prop/my-prop",
+    "tab-control": "/components/tab-control/tab-control"
+  }
 }

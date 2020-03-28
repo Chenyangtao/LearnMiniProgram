@@ -1,23 +1,28 @@
 // pages/home/home.js
-Component({
-  /**
-   * 组件的属性列表
-   */
-  properties: {
+import {
+  getMultiData
+} from '../../service/home.js'
 
-  },
-
-  /**
-   * 组件的初始数据
-   */
+Page({
   data: {
-
+    banners:[],
+    recommends:[]
   },
 
-  /**
-   * 组件的方法列表
-   */
-  methods: {
+  onLoad: function (options) {
+    //1.请求轮播图以及推荐数据
+   getMultiData().then(res=>{
+        //取出轮播图和推荐的数据
+         console.log(res)
+        const banners=res.data.data.banner.list;
+        const recommends=res.data.data.recommend.list;
+        //将banners和recommends放到data中
+        this.setData({
+          banners,
+          recommends
+        })
+    })
+  },
 
-  }
+ 
 })

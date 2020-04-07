@@ -1,0 +1,47 @@
+/* pages/buy/buy.wxss */
+page{
+  background-color: #f8f8f8;
+}
+.box{
+  height: 500rpx;
+  margin: 50rpx 20rpx;
+  background-color: white;
+  
+}
+.dot{
+  margin-left: 40rpx;
+  margin-right: 40rpx;
+  border-bottom: solid black 1rpx;
+  padding-top: 30rpx;
+}
+.dot image{
+   vertical-align: middle;
+  width: 80rpx;
+  height: 80rpx;
+}
+.dot text{
+  font-size: 30rpx;
+  margin-left: 30rpx;
+}
+.buyImg{
+  margin: 40rpx;
+  width: 100rpx;
+  height: 100rpx;
+  display: block;
+  -webkit-box-flex: 1;
+ 
+}
+.buyImg image{
+   width: 80rpx;
+  height: 70rpx;
+  vertical-align: middle;
+}
+.buyImg text{
+  font-size: 25rpx;
+  display: block;
+  margin-top: 10rpx;
+}
+.buyBox{
+  display: flex;
+  flex-wrap: wrap;
+}

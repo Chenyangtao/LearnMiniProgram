@@ -1,0 +1,31 @@
+<!--pages/buyList/buList.wxml-->
+
+
+<view class="box">
+  <van-cell-group>
+    <van-cell title="帮买类型" is-link bind:click="showPopup" value="{{ttype}}" />
+    <van-popup show="{{ show }}" bind:close="onClose" position="bottom" custom-style="height: 40%;">
+      <van-picker columns="{{ columns }}" bind:change="onChange" />
+    </van-popup>
+    <van-field value="{{ value }}" placeholder="请具体描述需要帮买物品" autosize type="textarea" border="{{ false }}" bind:change="onChange_type" />
+  </van-cell-group>
+</view>
+
+<view class="box">
+  <van-cell-group>
+    <van-cell title="要送到哪里" value="{{address}}" is-link border="{{ true }}" icon="../../../../image/send/get.png" bind:tap='chAdd'/>
+  </van-cell-group>
+  <van-field value="{{ value }}" placeholder="请输入物品重量" border="{{ false }}" bind:change="onChange_Weight" label="重量" input-align="right" />
+</view>
+
+<view class="box">
+
+  <van-field value="{{ value }}" placeholder="1/1 2:00" border="{{ false }}" bind:change="onChange_time" label="送货时间" input-align="right" />
+
+  <van-field value="{{ value }}" placeholder="备注信息" border="{{ false }}" bind:change="onChange_bz" label="备注" input-align="right" />
+  <van-cell title="优惠劵" is-link value="选择优惠劵" icon="../../../../image/send/vip.png" />
+
+</view>
+<text class="prompt">温馨提示：根据相关法律规定要求，跑男将在取货时对您的物品进行检查，请不要将物品外包装封口。感谢您的配合！</text>
+<view class="box2"></view>
+<button class="btn">确定</button>

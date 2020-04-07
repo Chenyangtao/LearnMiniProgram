@@ -1,1 +1,44 @@
 /* pages/home/home.wxss */
+page{
+  background-color: #f8f8f8;
+}
+.head{
+  text-align: center;
+  background-color: #fff;
+  height: 120rpx;
+}
+.head text{
+    height: 50rpx;
+   line-height: 120rpx;
+}
+.xl{
+  width: 64rpx;
+  height: 50rpx;
+  vertical-align: middle;
+}
+.content{
+  float:left;
+  width: 315rpx;
+  background-color: white;
+  height: 250rpx;
+  margin-top: 10px;
+  text-align: center;
+  margin-left: 38rpx;
+}
+.send_img{
+  width: 100rpx;
+  height: 80rpx;
+  margin-top: 20rpx;
+  vertical-align: middle;
+}
+.bold{
+ position: relative;
+font-weight: bold;
+font-size: 36rpx;
+color: #333;
+display: block;
+}
+.gray_x{
+  font-size: 25rpx;
+  color: #999;
+}

@@ -1,0 +1,31 @@
+/* components/selet-bow/select-bow.wxss */
+.list-item image {
+  width: 50rpx;
+  height: 50rpx;
+  vertical-align: middle;
+  margin-left: 20rpx;
+}
+.list-item{
+  /* display: flex;
+  flex: 1; */
+   height: 120rpx;
+  line-height: 100rpx;
+  background: #fff;
+  font-size: 32rpx;
+  margin-left: 20rpx;
+  margin-right: 10rpx;
+  border-bottom: 1px solid #f8f8f8;
+
+}
+.list-right{
+ float: right;
+ margin-right: 30rpx;
+ margin-top: 10rpx;
+}
+.list-item text {
+  vertical-align: middle;
+  margin-left: 16rpx;
+}
+.list-view {
+  border-top: 20rpx solid #f8f8f8;
+}

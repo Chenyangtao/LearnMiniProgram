@@ -1,0 +1,22 @@
+<!--pages/buy/buy.wxml-->
+<view class="box">
+  <view class="dot">
+    <image src="/image/buy/dot.png"></image>
+    <text>想买点什么...</text>
+  </view>
+  <view class="buyBox">
+   <block wx:for="{{infos}}" wx:key="index">
+     <view class="buyImg"
+            bindtap="handleBuy"
+            data-tet="{{item.tet}}">
+      <image src="/image/buy/{{item.icon}}"></image>
+      <text>{{item.tet}}</text>
+     </view>
+   </block>
+  </view>
+</view>
+
+<!-- <view class="buyImg">
+    <image src="/image/buy/buy_1.png" ></image>
+    <text>任意买</text>
+   </view> -->

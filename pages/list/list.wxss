@@ -1,0 +1,25 @@
+/* pages/list/list.wxss */
+page{
+  background-color: #f8f8f8;
+}
+.list_dd{
+  display: flex;
+  background-color: white;
+}
+.list_zf{
+  display: block;
+-webkit-box-flex: 1;
+flex: 1;
+size: 18rpx;
+text-align: center;
+height: 80rpx;
+line-height: 80rpx;
+font-size: 32rpx;
+}
+.list_ac{
+  color: #ff5777;
+}
+.list_ac text{
+  padding: 16rpx 10rpx;
+  border-bottom: 6rpx solid #ff5777;
+}

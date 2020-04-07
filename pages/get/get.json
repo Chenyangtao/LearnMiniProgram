@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "select-bow": "../../components/selet-bow/select-bow"
+  }
+}

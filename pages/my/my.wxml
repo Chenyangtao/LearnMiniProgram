@@ -1,0 +1,12 @@
+<!--pages/my/my.wxml-->
+<w-header />
+<view class="box">
+  <van-cell title="我的钱包" is-link />
+  <van-cell title="我的订单" is-link />
+  <van-cell title="我的优惠劵" is-link />
+</view>
+<view class="box">
+  <van-cell title="用户指南" is-link />
+  <van-cell title="用户反馈" is-link />
+  <van-cell title="退出账户" is-link />
+</view>

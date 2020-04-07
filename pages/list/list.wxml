@@ -1,0 +1,28 @@
+<!--pages/list/list.wxml-->
+<!-- <view class="list_dd">
+    <view class="list_zf list_ac">
+      <text>待支付</text>
+    </view>
+    <view class="list_zf">
+      <text>待接单</text>
+    </view>
+    <view class="list_zf">
+      <text>进行中</text>
+    </view>
+    <view class="list_zf">
+      <text>已完成</text>
+    </view>
+    <view class="list_zf">
+      <text>已取消</text>
+    </view>
+  </view> -->
+
+  <view class="list_dd">
+    <block wx:for="{{titles}}" wx:key="index">
+      <view class='list_zf {{index==currentIndex? "list_ac":" " }}'
+            bindtap="itemClick"
+            data-index="{{index}}">
+        <text>{{item}}</text>
+      </view>
+    </block>
+  </view>

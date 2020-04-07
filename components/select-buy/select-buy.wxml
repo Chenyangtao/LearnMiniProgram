@@ -1,0 +1,10 @@
+<!--components/select-buy/select-buy.wxml-->
+<view class="list_dd">
+    <block wx:for="{{titles}}" wx:key="index">
+      <view class='list_zf {{index==currentIndex? "list_ac":" " }}'
+            bindtap="itemClick"
+            data-index="{{index}}">
+        <text>{{item}}</text>
+      </view>
+    </block>
+  </view>

@@ -1,23 +1,14 @@
 // app.js
-Component({
-  /**
-   * 组件的属性列表
-   */
-  properties: {
+
+App({
+  onLaunch: function () {
+    //云开发环境初始化
+    wx.cloud.init({
+      env:"dada-run-gz8pk",
+      traceUser:true
+    })
 
   },
 
-  /**
-   * 组件的初始数据
-   */
-  data: {
-
-  },
-
-  /**
-   * 组件的方法列表
-   */
-  methods: {
-
-  }
+  
 })

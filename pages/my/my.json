@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "w-header":"./w-header/w-header",
+    "w-list-view":"./w-list-view/w-list-view"
+  }
+}

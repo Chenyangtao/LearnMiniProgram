@@ -1,0 +1,23 @@
+/* pages/buyList/buList.wxss */
+page{
+  background-color: #f8f8f8;
+}
+.box{
+  margin: 20rpx;
+}
+.prompt{
+  font-size: 25rpx;
+  color: #8a8a8a;
+}
+.btn{
+  font-size: 39rpx;
+  background: #fff;
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  width: 700rpx;
+  justify-content: center;
+  margin: 30rpx;
+  border-radius:98rpx;
+  background-color:#07c160;
+}

@@ -1,0 +1,23 @@
+{
+  "name": "miniprogram-3",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Chenyangtao/LearnMiniProgram.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Chenyangtao/LearnMiniProgram/issues"
+  },
+  "homepage": "https://github.com/Chenyangtao/LearnMiniProgram#readme",
+  "dependencies": {
+    "@antv/f2-canvas": "^1.0.5",
+    "@vant/weapp": "^1.1.0"
+  }
+}

@@ -1,3 +1,32 @@
 <!--pages/home/home.wxml-->
-<text>hello world</text>
-<button  size="mini">按钮</button>
+<view class="head">
+  <view >
+  <text>{{city}}</text>
+  <image src="/image/icon/map.png" class="xl"></image>
+  </view>
+</view>
+<view class="content" bind:tap="goToSend" >
+  <image src="/image/icon/send.png" class="send_img"/>
+  <text class="bold">帮我送</text>
+  <text class="gray_x">包裹/快递</text>
+</view>
+<view class="content" bind:tap="goToGet">
+  <image src="/image/icon/get.png" class="send_img"/>
+  <text class="bold">帮我取</text>
+  <text class="gray_x">包裹/快递</text>
+</view>
+<view class="content" bind:tap="goToBuy">
+  <image src="/image/icon/buy.png" class="send_img"/>
+  <text class="bold">帮我买</text>
+  <text class="gray_x">美食/药品/蔬菜</text>
+</view>
+<view class="content" bind:tap="goToQu">
+  <image src="/image/icon/buy.png" class="send_img"/>
+  <text class="bold">帮我排队</text>
+  <text class="gray_x">美食/药品/蔬菜</text>
+</view>
+<view class="content" bind:tap="goToBuy">
+  <image src="/image/icon/buy.png" class="send_img"/>
+  <text class="bold">帮帮</text>
+  <text class="gray_x">美食/药品/蔬菜</text>
+</view>

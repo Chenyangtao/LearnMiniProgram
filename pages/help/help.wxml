@@ -1,0 +1,28 @@
+<!--pages/buyList/buList.wxml-->
+
+
+<view class="box">
+ 
+    <van-field value="{{ value }}" placeholder="请具体描述需要的帮助" autosize type="textarea" border="{{ false }}" bind:change="onChange_type" />
+  
+</view>
+
+<view class="box">
+  <van-cell-group>
+    <van-cell title="所在地点" value="{{address}}" is-link border="{{ true }}" bind:tap="chAdd"/>
+  </van-cell-group>
+  
+</view>
+
+<view class="box">
+
+  <van-field value="{{ value }}" placeholder="1/1 2:00" border="{{ false }}" bind:change="onChange_time" label="时间" input-align="right" />
+
+  <van-field value="{{ value }}" placeholder="备注信息" border="{{ false }}" bind:change="onChange_bz" label="备注" input-align="right" />
+  <van-cell title="优惠劵" is-link value="选择优惠劵" icon="../../../../image/send/vip.png" />
+
+</view>
+<text class="prompt">温馨提示：根据相关法律规定要求，跑男将在取货时对您的物品进行检查，请不要将物品外包装封口。感谢您的配合！</text>
+
+
+<button class="btn">确定</button>

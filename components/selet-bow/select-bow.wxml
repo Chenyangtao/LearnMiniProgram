@@ -1,0 +1,11 @@
+<!--components/selet-bow/select-bow.wxml-->
+<view class='list-view'>
+  <block wx:for="{{infos}}" wx:key="index">
+    <view class='list-item'>
+      <image src="/image/send/{{item.icon}}"/>
+      <text>{{item.info}}</text>
+      <view class="list-right">点这里</view>
+    </view>
+    
+  </block>
+</view>
